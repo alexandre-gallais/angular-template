@@ -2,4 +2,6 @@
 
 Template for new angular project.
 
-Go see `instruction/README.md` and delete me.
+## instruction
+
+1. Go see [instruction/README.md](/instruction/README.md) and delete me.
