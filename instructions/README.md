@@ -55,7 +55,7 @@
    }
    ```
 
-   Into `angular.json`
+   Into `tsconfig.json`
 
 ## ESLint
 
