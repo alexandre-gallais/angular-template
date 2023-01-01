@@ -47,16 +47,6 @@
 
    Into `angular.json > projects > <AppName> > architect > build > configurations > production`
 
-5. Add
-
-   ```json
-   "angularCompilerOptions": {
-      "strictTemplates": true
-   }
-   ```
-
-   Into `tsconfig.json`
-
 ## ESLint
 
 1. Do the command: `ng add @angular-eslint/schematics`\
