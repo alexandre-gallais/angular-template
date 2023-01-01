@@ -60,4 +60,4 @@
 
 ## End
 
-1. Do the command `rm -r instruction`
+1. Do the command `rm -r instructions`
