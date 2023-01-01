@@ -25,7 +25,7 @@
 4. Open the folder with VSCODE.
 5. Do the command `git clone https://github.com/alexandre-gallais/angular-template.git ./`
 6. Do the command `git remote set-url origin git@<GIT_URL>`\
-   Ex: `git remote set-url origin git@https://github.com/alexandre-gallais/orksgp-atari.git`
+   e.g. `git remote set-url origin git@https://github.com/alexandre-gallais/orksgp-atari.git`
 
 ## Node.js
 
