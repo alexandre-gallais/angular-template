@@ -54,10 +54,6 @@
 2. Do the command: `rm .eslintrc.json; mv eslint/eslintrc.json .eslintrc.json; mv eslint/.eslintignore .eslintignore`
 3. Do the command: `npm i -D eslint@8 @typescript-eslint/parser@5 @typescript-eslint/eslint-plugin@5`
 
-## TypeScript
-
-1. Do the command: `npm i -D typescript@4`
-
 ## Browserslist + EditorConfig + Stylelint
 
 1. Do the command: `rm .editorconfig; mv angular-template/.browserslistrc .browserslistrc; mv angular-template/.editorconfig .editorconfig; mv angular-template/.stylelintrc.json .stylelintrc.json; rm -r angular-template`
