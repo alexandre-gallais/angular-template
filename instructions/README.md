@@ -17,16 +17,6 @@
    12. [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
    13. [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
-## Git
-
-1. Go to <https://github.com/>
-2. Create a new repo.
-3. On your computer, create a folder with the repo name.
-4. Open the folder with VSCODE.
-5. Do the command `git clone https://github.com/alexandre-gallais/angular-template.git ./`
-6. Do the command `git remote set-url origin git@<GIT_URL>`\
-   e.g. `git remote set-url origin git@https://github.com/alexandre-gallais/orksgp-atari.git`
-
 ## Node.js
 
 1. Go to <https://nodejs.org/en/>
