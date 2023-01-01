@@ -1,0 +1,31 @@
+{
+	"root": true,
+	"ignorePatterns": ["projects/**/*", "node_modules/**/*", "eslint/**/*"],
+	"env": {
+		"browser": true,
+		"es2022": true
+	},
+
+	"overrides": [
+		{
+			"files": ["*.ts"],
+			"extends": ["./eslint/eslint-ts.cjs"],
+			"parserOptions": {
+				"project": ["./tsconfig.json"]
+			}
+		},
+
+		{
+			"files": ["src/app/**/*.ts"],
+			"extends": ["./eslint/eslint-angular-ts.cjs"],
+			"parserOptions": {
+				"project": ["./tsconfig.json"]
+			}
+		},
+
+		{
+			"files": ["src/app/**/*.html"],
+			"extends": ["./eslint/eslint-angular-html.cjs"]
+		}
+	]
+}
