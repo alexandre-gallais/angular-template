@@ -9,4 +9,4 @@ IDE: VSCODE
 
 ## instruction
 
-1. Go see [instructions/README.md](./instructions/README.md) and delete me.
+1. Go see [instructions/README.md](./instructions/README.md).
