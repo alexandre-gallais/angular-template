@@ -1,16 +1,14 @@
-# ANGULAR TEMPLATE
+# angular-template
 
-Last update: 2022-12-28\
-Angular version: 15
-Device: Mac M1
-
-## GitHub
+## Git
 
 1. Go to <https://github.com/>
-2. Create a new repo with just a name.
-3. Go to [.git/config](../.git/config).
-4. Change the `url` parameter by the new repo url.
-5. Save the change.
+2. Create a new repo.
+3. On your computer, create a folder with the repo name.
+4. Open the folder with VSCODE.
+5. Do the command `git clone https://github.com/alexandre-gallais/angular-template.git ./`
+6. Do the command `git remote set-url origin git@<GIT_URL>`\
+   Ex: `git remote set-url origin git@https://github.com/alexandre-gallais/orksgp-atari.git`
 
 ## Node.js
 
