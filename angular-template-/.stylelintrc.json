@@ -1,0 +1,542 @@
+{
+	"plugins": ["stylelint-order"],
+	"extends": "stylelint-config-standard",
+	"customSyntax": "postcss-scss",
+
+	"rules": {
+		"no-descending-specificity": true,
+		"declaration-block-no-duplicate-custom-properties": true,
+		"declaration-block-no-duplicate-properties": true,
+		"font-family-no-duplicate-names": true,
+		"keyframe-block-no-duplicate-selectors": true,
+		"no-duplicate-at-import-rules": true,
+		"no-duplicate-selectors": true,
+
+		"block-no-empty": true,
+		"no-empty-source": null,
+
+		"color-no-invalid-hex": true,
+		"function-calc-no-unspaced-operator": true,
+		"keyframe-declaration-no-important": true,
+
+		"no-irregular-whitespace": true,
+
+		"custom-property-no-missing-var-function": true,
+		"font-family-no-missing-generic-family-keyword": true,
+
+		"declaration-no-important": true,
+
+		"declaration-block-single-line-max-declarations": 1,
+
+		"color-function-notation": "legacy",
+		"font-weight-notation": "numeric",
+
+		"rule-empty-line-before": "always",
+		"at-rule-empty-line-before": "always",
+
+		"number-leading-zero": "always",
+
+		"selector-descendant-combinator-no-non-space": true,
+
+		"indentation": "tab",
+		"no-eol-whitespace": null,
+		"declaration-empty-line-before": null,
+		"custom-property-pattern": null,
+		"declaration-block-no-redundant-longhand-properties": null,
+
+		"order/order": [
+			"dollar-variables",
+			"custom-properties",
+			"at-rules",
+			"declarations",
+			{
+				"type": "at-rule",
+				"name": "keyframes"
+			},
+			{
+				"type": "at-rule",
+				"name": "media"
+			},
+			"rules"
+		],
+
+		"order/properties-order": [
+			[
+				{
+					"groupName": "CSS all",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": ["all"]
+				},
+				{
+					"groupName": "CSS Positioned",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"z-index",
+						"position",
+						"top",
+						"right",
+						"bottom",
+						"left"
+					]
+				},
+				{
+					"groupName": "CSS Overflow",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"-webkit-line-clamp",
+						"line-clamp",
+						"max-lines",
+						"overflow",
+						"overflow-x",
+						"overflow-y",
+						"scroll-behavior",
+						"scrollbar-gutter",
+						"text-overflow",
+						"overflow-anchor"
+					]
+				},
+				{
+					"groupName": "CSS Scroll Snap",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"scroll-margin",
+						"scroll-margin-block",
+						"scroll-margin-block-end",
+						"scroll-margin-block-start",
+						"scroll-margin-bottom",
+						"scroll-margin-inline",
+						"scroll-margin-inline-end",
+						"scroll-margin-inline-start",
+						"scroll-margin-left",
+						"scroll-margin-right",
+						"scroll-margin-top",
+						"scroll-padding",
+						"scroll-padding-block",
+						"scroll-padding-block-end",
+						"scroll-padding-block-start",
+						"scroll-padding-bottom",
+						"scroll-padding-inline",
+						"scroll-padding-inline-end",
+						"scroll-padding-inline-start",
+						"scroll-padding-left",
+						"scroll-padding-right",
+						"scroll-padding-top",
+						"scroll-snap-align",
+						"scroll-snap-stop",
+						"scroll-snap-type"
+					]
+				},
+				{
+					"groupName": "CSS Display + CSS Flexible + CSS Grid + CSS Multi-column + CSS Ruby Annotation + CSS Table",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"display",
+
+						"flex",
+						"flex-basis",
+						"flex-direction",
+						"flex-flow",
+						"flex-grow",
+						"flex-shrink",
+						"flex-wrap",
+						"justify-content",
+						"justify-items",
+						"justify-self",
+						"align-content",
+						"align-items",
+						"align-self",
+						"place-content",
+						"place-items",
+						"place-self",
+						"order",
+
+						"grid",
+						"grid-area",
+						"grid-auto-flow",
+						"grid-auto-rows",
+						"grid-auto-columns",
+						"grid-column",
+						"grid-column-start",
+						"grid-column-end",
+						"grid-row",
+						"grid-row-start",
+						"grid-row-end",
+						"grid-template",
+						"grid-template-areas",
+						"grid-template-rows",
+						"grid-template-columns",
+						"line-grid",
+
+						"vertical-align",
+
+						"columns",
+						"column-count",
+						"column-width",
+						"column-span",
+						"column-fill",
+						"column-rule",
+						"column-rule-width",
+						"column-rule-color",
+						"column-rule-style",
+
+						"ruby-align",
+						"ruby-merge",
+						"ruby-overhang",
+						"ruby-position",
+
+						"border-collapse",
+						"border-spacing",
+						"caption-side",
+						"empty-cells",
+						"table-layout"
+					]
+				},
+				{
+					"groupName": "CSS Box Sizing + CSS Logical Properties and Values",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"aspect-ratio",
+						"box-sizing",
+						"width",
+						"min-width",
+						"max-width",
+						"height",
+						"min-height",
+						"max-height",
+
+						"line-height",
+
+						"block-size",
+						"min-block-size",
+						"max-block-size",
+						"inline-size",
+						"min-inline-size",
+						"max-inline-size"
+					]
+				},
+				{
+					"groupName": "CSS Box Model",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"margin",
+						"margin-top",
+						"margin-right",
+						"margin-bottom",
+						"margin-left",
+						"margin-trim",
+						"padding",
+						"padding-top",
+						"padding-right",
+						"padding-bottom",
+						"padding-left",
+						"gap",
+						"row-gap",
+						"column-gap"
+					]
+				},
+				{
+					"groupName": "CSS Basic User Interface",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"appearance",
+						"caret-color",
+						"cursor",
+						"resize",
+						"user-select"
+					]
+				},
+				{
+					"groupName": "CSS Backgrounds",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"content-visibility",
+						"visibility",
+
+						"background",
+						"background-attachment",
+						"background-clip",
+						"background-color",
+						"background-image",
+						"background-origin",
+						"background-position",
+						"background-repeat",
+						"background-size",
+
+						"clip-path",
+						"clip-rule",
+						"mask",
+						"mask-border",
+						"mask-border-mode",
+						"mask-border-outset",
+						"mask-border-repeat",
+						"mask-border-slice",
+						"mask-border-source",
+						"mask-border-width",
+						"mask-clip",
+						"mask-composite",
+						"mask-image",
+						"mask-mode",
+						"mask-origin",
+						"mask-position",
+						"mask-repeat",
+						"mask-size",
+						"mask-type",
+
+						"box-shadow",
+
+						"background-blend-mode",
+						"isolation",
+						"mix-blend-mode"
+					]
+				},
+				{
+					"groupName": "CSS Borders",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"border",
+						"border-top",
+						"border-right",
+						"border-bottom",
+						"border-left",
+
+						"border-color",
+						"border-top-color",
+						"border-right-color",
+						"border-bottom-color",
+						"border-left-color",
+
+						"border-image",
+						"border-image-outset",
+						"border-image-repeat",
+						"border-image-slice",
+						"border-image-source",
+						"border-image-width",
+
+						"border-radius",
+						"border-top-left-radius",
+						"border-top-right-radius",
+						"border-bottom-left-radius",
+						"border-bottom-right-radius",
+
+						"border-style",
+						"border-top-style",
+						"border-right-style",
+						"border-bottom-style",
+						"border-left-style",
+
+						"border-width",
+						"border-top-width",
+						"border-right-width",
+						"border-bottom-width",
+						"border-left-width",
+
+						"outline",
+						"outline-color",
+						"outline-offset",
+						"outline-style",
+						"outline-width"
+					]
+				},
+				{
+					"groupName": "CSS Lists and Counters",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"counter-increment",
+						"counter-reset",
+						"counter-set",
+						"list-style",
+						"list-style-image",
+						"list-style-position",
+						"list-style-type",
+						"marker-side"
+					]
+				},
+				{
+					"groupName": "CSS Color",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": ["color", "opacity"]
+				},
+				{
+					"groupName": "CSS Fonts",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"font",
+						"font-family",
+						"font-feature-settings",
+						"font-kerning",
+						"font-language-override",
+						"font-optical-sizing",
+						"font-palette",
+						"font-size",
+						"font-size-adjust",
+						"font-stretch",
+						"font-style",
+						"font-synthesis",
+						"font-synthesis-small-caps",
+						"font-synthesis-style",
+						"font-synthesis-weight",
+						"font-variant",
+						"font-variant-alternates",
+						"font-variant-caps",
+						"font-variant-east-asian",
+						"font-variant-emoji",
+						"font-variant-ligatures",
+						"font-variant-numeric",
+						"font-variant-position",
+						"font-variation-settings",
+						"font-weight"
+					]
+				},
+				{
+					"groupName": "CSS Page Floats",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"clear",
+						"float",
+						"float-defer",
+						"float-offset",
+						"float-reference"
+					]
+				},
+				{
+					"groupName": "CSS Shapes",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"shape-image-threshold",
+						"shape-margin",
+						"shape-outside"
+					]
+				},
+				{
+					"groupName": "CSS Writing Modes",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"direction",
+						"glyph-orientation-vertical",
+						"text-combine-upright",
+						"text-orientation",
+						"unicode-bidi",
+						"writing-mode"
+					]
+				},
+				{
+					"groupName": "CSS Text",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"letter-spacing",
+						"line-break",
+						"line-padding",
+						"overflow-wrap",
+						"tab-size",
+						"text-align",
+						"text-align-all",
+						"text-align-last",
+						"text-group-align",
+						"text-indent",
+						"text-justify",
+						"text-space-collapse",
+						"text-space-trim",
+						"text-spacing",
+						"text-transform",
+						"text-wrap",
+						"white-space",
+						"word-break",
+						"word-spacing",
+						"word-wrap",
+
+						"text-decoration",
+						"text-decoration-color",
+						"text-decoration-line",
+						"text-decoration-skip",
+						"text-decoration-skip-box",
+						"text-decoration-skip-ink",
+						"text-decoration-skip-inset",
+						"text-decoration-skip-self",
+						"text-decoration-skip-spaces",
+						"text-decoration-style",
+						"text-decoration-thickness",
+						"text-emphasis",
+						"text-emphasis-color",
+						"text-emphasis-position",
+						"text-emphasis-skip",
+						"text-emphasis-style",
+						"text-shadow",
+						"text-underline-offset",
+						"text-underline-position"
+					]
+				},
+				{
+					"groupName": "CSS Content",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": ["content", "quotes", "string-set"]
+				},
+				{
+					"groupName": "CSS Transforms",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"backface-visibility",
+						"perspective",
+						"perspective-origin",
+						"rotate",
+						"scale",
+						"transform",
+						"transform-box",
+						"transform-origin",
+						"transform-style",
+						"translate"
+					]
+				},
+				{
+					"groupName": "CSS Transitions",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"transition",
+						"transition-delay",
+						"transition-duration",
+						"transition-property",
+						"transition-timing-function"
+					]
+				},
+				{
+					"groupName": "CSS Animations",
+					"emptyLineBefore": "always",
+					"noEmptyLineBetween": true,
+					"properties": [
+						"animation",
+						"animation-delay",
+						"animation-direction",
+						"animation-duration",
+						"animation-fill-mode",
+						"animation-iteration-count",
+						"animation-name",
+						"animation-play-state",
+						"animation-timing-function"
+					]
+				}
+			],
+			{
+				"severity": "warning"
+			}
+		]
+	}
+}
