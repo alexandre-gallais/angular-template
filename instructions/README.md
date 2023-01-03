@@ -17,6 +17,10 @@
    12. [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
    13. [Stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 
+   ```bash
+   code --install-extension Angular.ng-template --force; code --install-extension formulahendry.auto-rename-tag --force; code --install-extension aaron-bond.better-comments --force; code --install-extension EditorConfig.EditorConfig --force; code --install-extension dbaeumer.vscode-eslint --force; code --install-extension PeterSchmalfeldt.explorer-exclude --force; code --install-extension VisualStudioExptTeam.intellicode-api-usage-examples --force; code --install-extension VisualStudioExptTeam.vscodeintellicode --force; code --install-extension yzhang.markdown-all-in-one --force; code --install-extension DavidAnson.vscode-markdownlint --force; code --install-extension unifiedjs.vscode-mdx --force; code --install-extension christian-kohler.path-intellisense --force; code --install-extension esbenp.prettier-vscode --force; code --install-extension stylelint.vscode-stylelint --force;
+   ```
+
 ## Node.js
 
 1. Go to <https://nodejs.org/en/>
@@ -25,7 +29,13 @@
 
 ## Angular CLI
 
-1. Do the command: `sudo npm install -g @angular/cli@15`
+1. Do the command: `sudo npm uninstall -g @angular/cli`
+2. Do the command: `sudo npm cache clean -g --force;`
+3. Do the command: `sudo npm install -g @angular/cli@15 --legacy-peer-deps`
+
+## Clone the repo
+
+1. Do the command: `git clone https://github.com/alexandre-gallais/angular-template.git ./`
 
 ## New Angular project
 
@@ -56,7 +66,7 @@
 
 ## Browserslist + EditorConfig + Stylelint
 
-1. Do the command: `npm i -D npm i stylelint stylelint-config-standard stylelint-order postcss-scss`
+1. Do the command: `npm i -D npm i stylelint@14 stylelint-config-standard@29 stylelint-order@5 postcss-scss@4`
 2. Do the command: `rm .editorconfig; mv angular-template-/.browserslistrc .browserslistrc; mv angular-template-/.editorconfig .editorconfig; mv angular-template-/.stylelintrc.json .stylelintrc.json; rm -r angular-template-`
 
 ## End
