@@ -55,7 +55,7 @@
    ],
    ```
 
-   Into `angular.json > projects > <AppName> > architect > build > configurations > production`
+   Into `angular.json > projects > <REPO_NAME> > architect > build > configurations > production`
 
 ## ESLint
 
